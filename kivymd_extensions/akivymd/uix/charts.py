@@ -260,9 +260,9 @@ class AKChartBase(DrawTools, ThemableBehavior, RelativeLayout):
         trim = self.trim
         padding = self.padding
         size = self.size
-        min_x = min(x_values) if trim else 0
+        min_x = 0
         max_x = max(x_values)
-        min_y = min(y_values) if trim else 0
+        min_y = 0
         max_y = max(y_values)
         x_distance = (max_x - min_x) if trim else max_x
         y_distance = (max_y - min_y) if trim else max_y
